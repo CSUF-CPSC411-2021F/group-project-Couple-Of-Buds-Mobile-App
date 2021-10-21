@@ -32,6 +32,11 @@ class AboutFragment : Fragment() {
                 view : View -> view.findNavController().navigate(R.id.action_aboutFragment_to_hostLybaFragment)
         }
 
+        binding.selwaButton.setOnClickListener {
+                view : View -> view.findNavController().navigate(R.id.action_aboutFragment_to_hostSelwaFragment)
+        }
+
+
         return binding.root
 
     }
