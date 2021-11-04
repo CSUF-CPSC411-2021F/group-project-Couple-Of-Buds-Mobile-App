@@ -10,10 +10,10 @@
         android:id="@+id/imageButton2"
         android:layout_width="219dp"
         android:layout_height="217dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
         app:srcCompat="@drawable/logo" />
@@ -24,9 +24,10 @@
         android:layout_height="198dp"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo2"
-        tools:layout_editor_absoluteY="34dp" />
+        tools:layout_editor_absoluteY="31dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
