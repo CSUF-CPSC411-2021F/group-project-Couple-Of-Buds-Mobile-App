@@ -6,6 +6,16 @@
     app:startDestination="@id/aboutFragment">
 
     <fragment
+        android:id="@+id/hostLybaFragment"
+        android:name="com.example.cobrtb.HostLybaFragment"
+        android:label="fragment_host_lyba"
+        tools:layout="@layout/fragment_host_lyba" />
+    <fragment
+        android:id="@+id/hostSelwaFragment"
+        android:name="com.example.cobrtb.HostSelwaFragment"
+        android:label="fragment_host_selwa"
+        tools:layout="@layout/fragment_host_selwa" />
+    <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.cobrtb.AboutFragment"
         android:label="fragment_about"
@@ -17,16 +27,6 @@
             android:id="@+id/action_aboutFragment_to_hostSelwaFragment"
             app:destination="@id/hostSelwaFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/hostLybaFragment"
-        android:name="com.example.cobrtb.HostLybaFragment"
-        android:label="fragment_host_lyba"
-        tools:layout="@layout/fragment_host_lyba" />
-    <fragment
-        android:id="@+id/hostSelwaFragment"
-        android:name="com.example.cobrtb.HostSelwaFragment"
-        android:label="fragment_host_selwa"
-        tools:layout="@layout/fragment_host_selwa" />
 
 
 </navigation>
