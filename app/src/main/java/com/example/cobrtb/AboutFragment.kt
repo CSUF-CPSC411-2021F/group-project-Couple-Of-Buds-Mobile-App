@@ -21,12 +21,14 @@ class AboutFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_about, container, false)
 
-        val binding = FragmentAboutBinding.inflate(layoutInflater)
+        //val binding = FragmentAboutBinding.inflate(layoutInflater)
+
+        val binding = DataBindingUtil.inflate<FragmentAboutBinding>(inflater, R.layout.fragment_about,
+            container, false)
 
         binding.lybaButton.setOnClickListener {
                 view : View -> view.findNavController().navigate(R.id.action_aboutFragment_to_hostLybaFragment)
