@@ -11,7 +11,7 @@ class UpdatesPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Creat data binding and assign layout for the activity.
+        // Create data binding and assign layout for the activity.
         val binding: ActivityUpdatesPageBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_updates_page)
 

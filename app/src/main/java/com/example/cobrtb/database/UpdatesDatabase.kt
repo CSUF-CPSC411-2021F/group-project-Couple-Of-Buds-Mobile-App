@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.sqlite.db.SupportSQLiteDatabase
+import java.util.concurrent.Executors
 
 @Database(entities = [Updates::class], version = 1, exportSchema = false)
 abstract class UpdatesDatabase: RoomDatabase() {
@@ -20,7 +22,11 @@ abstract class UpdatesDatabase: RoomDatabase() {
             // Multiple threads can ask for the database at the same time, ensure we only initialize
             // it once by using synchronized. Only one thread may enter a synchronized block at a
             // time.
+
+            // return INSTANCE ?:
             synchronized(this) {
+
+                // INSTANCE ?: buildDatabase(context).also { INSTANCE = it }
 
                 // Copy the current value of INSTANCE to a local variable so Kotlin can smart cast.
                 // Smart cast is only available to local variables.
@@ -29,7 +35,7 @@ abstract class UpdatesDatabase: RoomDatabase() {
                 // The first time the method is called, instance will be `null`, so we should create
                 // a new database instance. The next time it is called, the database instance
                 // already exists and does not need to be recreated.
-                if (instance == null) {
+              if (instance == null) {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         UpdatesDatabase::class.java, // Your database class
@@ -37,11 +43,28 @@ abstract class UpdatesDatabase: RoomDatabase() {
                     )
                         .fallbackToDestructiveMigration()
                         .build()
-                    INSTANCE = instance
-                }
+                   INSTANCE = instance
+              }
+
                 // Return database instance; smart cast to be non-null.
                 return instance
             }
+        }
+        private fun buildDatabase(context: Context): UpdatesDatabase {
+            return Room.databaseBuilder(context, UpdatesDatabase::class.java, "updates_database")
+                .addCallback(object : RoomDatabase.Callback() {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        super.onCreate(db)
+                        // Pre-populate data
+                        Executors.newSingleThreadExecutor().execute { INSTANCE?.let {
+                                //it.updatesDao.clear()
+                                for (item in DataGenerator.announcements) {
+                                    //it.updatesDao.insert(item)
+                                }
+                            }
+                        }
+                    }
+                }).fallbackToDestructiveMigration().build()
         }
     }
 }

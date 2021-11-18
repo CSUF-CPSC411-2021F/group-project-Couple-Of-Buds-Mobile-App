@@ -12,6 +12,7 @@ interface UpdatesDao {
     // We use suspend to run the function asynchronously (coroutine).
     @Insert
     suspend fun insert(updates: Updates)
+    // fun insert(updates: Updates)
 
     // Update an updates entity to a table in the database. Often uses the primary key
     // We use suspend to run the function asynchronously (coroutine).
@@ -34,4 +35,5 @@ interface UpdatesDao {
     // We use suspend to run the function asynchronously (coroutine).
     @Query("DELETE from updates_table")
     suspend fun clear()
+    // fun clear()
 }
