@@ -6,16 +6,6 @@
     app:startDestination="@id/aboutFragment">
 
     <fragment
-        android:id="@+id/hostLybaFragment"
-        android:name="com.example.cobrtb.HostLybaFragment"
-        android:label="fragment_host_lyba"
-        tools:layout="@layout/fragment_host_lyba" />
-    <fragment
-        android:id="@+id/hostSelwaFragment"
-        android:name="com.example.cobrtb.HostSelwaFragment"
-        android:label="fragment_host_selwa"
-        tools:layout="@layout/fragment_host_selwa" />
-    <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.cobrtb.AboutFragment"
         android:label="fragment_about"
@@ -26,6 +16,36 @@
         <action
             android:id="@+id/action_aboutFragment_to_hostSelwaFragment"
             app:destination="@id/hostSelwaFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_aboutListFragment"
+            app:destination="@id/aboutListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hostLybaFragment"
+        android:name="com.example.cobrtb.HostLybaFragment"
+        android:label="fragment_host_lyba"
+        tools:layout="@layout/fragment_host_lyba" />
+    <fragment
+        android:id="@+id/hostSelwaFragment"
+        android:name="com.example.cobrtb.HostSelwaFragment"
+        android:label="fragment_host_selwa"
+        tools:layout="@layout/fragment_host_selwa" />
+
+    <fragment
+        android:id="@+id/aboutListFragment"
+        android:name="com.example.cobrtb.aboutlist.AboutListFragment"
+        android:label="Manage About">
+        <action
+            android:id="@+id/action_aboutListFragment_to_aboutItemFragment"
+            app:destination="@id/aboutItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutItemFragment"
+        android:name="com.example.cobrtb.aboutitem.AboutItemFragment"
+        android:label="About Information">
+        <argument
+            android:name="aboutId"
+            app:argType="long" />
     </fragment>
 
 
