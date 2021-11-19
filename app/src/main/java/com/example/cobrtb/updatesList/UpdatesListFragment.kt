@@ -36,6 +36,9 @@ class UpdatesListFragment: Fragment() {
             ViewModelProvider(
                 this, viewModelFactory).get(UpdatesViewModel::class.java)
 
+        // Pre-populate database
+        updatesViewModel.build()
+
         // Connect the UpdatesViewModel with the variable in the layout
         binding.updatesViewModel = updatesViewModel
         // Assign the lifecycle owner to the activity so it manages the data accordingly.

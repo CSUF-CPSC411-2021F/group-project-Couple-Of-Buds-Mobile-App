@@ -15,7 +15,7 @@ abstract class UpdatesDatabase: RoomDatabase() {
     companion object {
         // Holds a reference to the database.
         @Volatile
-        private var INSTANCE: UpdatesDatabase? = null // This class
+        var INSTANCE: UpdatesDatabase? = null // This class
 
         // Retrieve an instance of the database tied to the context (your application).
         fun getInstance(context: Context): UpdatesDatabase {
@@ -36,11 +36,7 @@ abstract class UpdatesDatabase: RoomDatabase() {
                 // a new database instance. The next time it is called, the database instance
                 // already exists and does not need to be recreated.
               if (instance == null) {
-                    instance = Room.databaseBuilder(
-                        context.applicationContext,
-                        UpdatesDatabase::class.java, // Your database class
-                        "updates_database"
-                    )
+                    instance = Room.databaseBuilder(context.applicationContext, UpdatesDatabase::class.java, "updates_database")
                         .fallbackToDestructiveMigration()
                         .build()
                    INSTANCE = instance
@@ -49,22 +45,6 @@ abstract class UpdatesDatabase: RoomDatabase() {
                 // Return database instance; smart cast to be non-null.
                 return instance
             }
-        }
-        private fun buildDatabase(context: Context): UpdatesDatabase {
-            return Room.databaseBuilder(context, UpdatesDatabase::class.java, "updates_database")
-                .addCallback(object : RoomDatabase.Callback() {
-                    override fun onCreate(db: SupportSQLiteDatabase) {
-                        super.onCreate(db)
-                        // Pre-populate data
-                        Executors.newSingleThreadExecutor().execute { INSTANCE?.let {
-                                //it.updatesDao.clear()
-                                for (item in DataGenerator.announcements) {
-                                    //it.updatesDao.insert(item)
-                                }
-                            }
-                        }
-                    }
-                }).fallbackToDestructiveMigration().build()
         }
     }
 }
