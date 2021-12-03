@@ -38,6 +38,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
             android:text="@{updatesItemViewModel.update.description}"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
