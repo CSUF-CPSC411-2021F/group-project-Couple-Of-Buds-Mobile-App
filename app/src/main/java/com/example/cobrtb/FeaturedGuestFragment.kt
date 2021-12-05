@@ -46,9 +46,17 @@ class FeaturedGuestFragment : Fragment() {
         // Assign the lifecycle owner to the activity so it manages the data accordingly.
         binding.lifecycleOwner = this
 
+        val name = guestViewModel.guestString
+
         binding.will.setOnClickListener { view: View ->
             view.findNavController()
-                .navigate(R.id.action_featuredGuestFragment_to_guestFragment)
+                .navigate(R.id.action_featuredGuestFragment_to_willFragment)
+
+        }
+
+        binding.immaGuess.setOnClickListener { view: View ->
+            view.findNavController()
+                .navigate(R.id.action_featuredGuestFragment_to_immaGuessFragment)
 
         }
 

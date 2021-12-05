@@ -28,6 +28,18 @@ class GuestViewModel(
 
     val guestList = database.getAllGuests()
 
+    var guestString = Transformations.map(guestList) {
+            guests -> // guests refer to the underlying data List<Intersection>
+        var result = ""
+        // Retrieve each Intersection object from the list
+        for (guest in guests) {
+            // Create a string using the Intersection name and location.
+            // The guest string is appended to a longer string with all guests.
+            result += "Name: ${guest.name}\nContact: ${guest.contact}\n ${guest.instagram}"
+        }
+        // Returns the aggregated String that is wrapped by the map function in a LiveData object.
+        result
+    }
 
 
 }

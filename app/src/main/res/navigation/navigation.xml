@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_featuredGuestFragment_to_guestFragment"
             app:destination="@id/guestFragment" />
+        <action
+            android:id="@+id/action_featuredGuestFragment_to_willFragment"
+            app:destination="@id/willFragment" />
+        <action
+            android:id="@+id/action_featuredGuestFragment_to_immaGuessFragment"
+            app:destination="@id/immaGuessFragment" />
     </fragment>
     <fragment
         android:id="@+id/guestFragment"
@@ -25,11 +31,15 @@
         <argument
             android:name="name"
             app:argType="string" />
-        <argument
-            android:name="contact"
-            app:argType="string" />
-        <argument
-            android:name="instagram"
-            app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/willFragment"
+        android:name="com.example.cobrtb.willFragment"
+        android:label="Will Duong"
+        tools:layout="@layout/fragment_will" />
+    <fragment
+        android:id="@+id/immaGuessFragment"
+        android:name="com.example.cobrtb.immaGuessFragment"
+        android:label="Ima Guess"
+        tools:layout="@layout/fragment_imma_guess" />
 </navigation>

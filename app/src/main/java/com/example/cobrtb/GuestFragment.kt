@@ -33,8 +33,6 @@ class GuestFragment : Fragment() {
     ): View? {
         val binding = FragmentGuestBinding.inflate(layoutInflater)
 
-        //val args = GuestFragmentArgs.fromBundle(requireArguments())
-
         // Inflate the layout for this fragment
         return binding.root
     }
