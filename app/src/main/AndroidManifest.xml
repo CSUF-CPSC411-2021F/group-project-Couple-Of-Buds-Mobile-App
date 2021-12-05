@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COBRTB">
         <activity
-            android:name=".Promo_profile"
-            android:exported="true" />
+            android:name=".ForTheUmmah"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MahnjaanDecorates"
+            android:exported="false" />
+        <activity
+            android:name=".Businesses"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

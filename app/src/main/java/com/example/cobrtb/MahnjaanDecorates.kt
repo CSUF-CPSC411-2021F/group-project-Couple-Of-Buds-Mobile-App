@@ -3,9 +3,9 @@ package com.example.cobrtb
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Promo_profile : AppCompatActivity() {
+class MahnjaanDecorates : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_promo_profile)
+        setContentView(R.layout.activity_mahnjaan_decorates)
     }
 }
