@@ -16,7 +16,7 @@ class GuestViewModelFactory(
      * Creates the GuestViewModel
      */
     @Suppress("unchecked_cast")
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(GuestViewModel::class.java)) { // ViewModel class
             return GuestViewModel(dataSource, application) as T // Call ViewModel constructor
         }
