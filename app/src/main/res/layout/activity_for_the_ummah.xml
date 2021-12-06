@@ -9,15 +9,28 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_height="17dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="309dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="403dp"
-        android:text="INFORMATION ABOUT FOR THE UMMAH" />
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="675dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FOR THE UMMAH"
+        android:textColor="#8BC34A" />
+
+    <WebView
+        android:id="@+id/link2"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="15dp" />
 </RelativeLayout>
