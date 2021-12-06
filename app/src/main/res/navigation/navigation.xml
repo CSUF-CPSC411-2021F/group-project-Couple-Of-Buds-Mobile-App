@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/aboutFragment">
+    app:startDestination="@id/updatesListFragment">
+    
 
     <fragment
         android:id="@+id/aboutFragment"
@@ -48,5 +49,24 @@
             app:argType="long" />
     </fragment>
 
+
+
+    
+    <fragment
+        android:id="@+id/updatesListFragment"
+        android:name="com.example.cobrtb.updatesList.UpdatesListFragment"
+        android:label="Manage Updates">
+        <action
+            android:id="@+id/action_updatesListFragment_to_updatesItemFragment"
+            app:destination="@id/updatesItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatesItemFragment"
+        android:name="com.example.cobrtb.updatesItem.UpdatesItemFragment"
+        android:label="Update Information">
+        <argument
+            android:name="updatesId"
+            app:argType="long" />
+    </fragment>
 
 </navigation>
