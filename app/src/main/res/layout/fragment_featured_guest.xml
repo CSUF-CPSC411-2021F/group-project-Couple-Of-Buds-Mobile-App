@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+        name="guestViewModel"
+        type="com.example.cobrtb.GuestViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FeaturedGuestFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="539dp"
+            android:layout_height="294dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/will"
+            android:layout_width="177dp"
+            android:layout_height="151dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="448dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/will" />
+
+        <ImageButton
+            android:id="@+id/immaGuess"
+            android:layout_width="180dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="448dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/will"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="367dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/guesttext" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

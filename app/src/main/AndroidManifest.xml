@@ -16,6 +16,9 @@
             android:name=".UpdatesPageActivity"
             android:exported="true" />
         <activity
+            android:name=".FeaturedGuestPage"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
