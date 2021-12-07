@@ -4,33 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C5A8A8"
     tools:context="com.example.cobrtb.Businesses">
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="170dp"
-        android:layout_height="17dp"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="675dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="669dp"
+        android:background="#00FFFFFF"
         android:fontFamily="sans-serif-black"
         android:text="FOR THE UMMAH"
-        android:textColor="#8BC34A" />
+        android:textColor="#3C8C3F" />
 
     <WebView
         android:id="@+id/link2"
         android:layout_width="wrap_content"
-        android:layout_height="256dp"
+        android:layout_height="397dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="13dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="190dp"
+        android:layout_height="206dp"
+        android:layout_above="@+id/link2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@drawable/fortheummah" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="195dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toEndOf="@+id/imageView5"
+        android:text="Join us for a future episode with the brand For The Ummah. In this future episode we will be discussing their journey through their brand creation. Tasneem discusses the hardships that the siblings had to over come to begin their small business"
+        android:textColor="#527727" />
+
+
 </RelativeLayout>
