@@ -22,9 +22,7 @@
         <activity
             android:name=".ForTheUmmah"
             android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+
         <activity
             android:name=".MahnjaanDecorates"
             android:exported="true" />
@@ -32,8 +30,12 @@
             android:name=".Businesses"
             android:exported="true" />
 
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
