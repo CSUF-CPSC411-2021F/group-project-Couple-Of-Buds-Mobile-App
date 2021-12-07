@@ -36,9 +36,7 @@ class AboutFragment : Fragment() {
                 view : View -> view.findNavController().navigate(R.id.action_aboutFragment_to_hostSelwaFragment)
         }
 
-        binding.aboutlistButton.setOnClickListener {
-                view : View -> view.findNavController().navigate(R.id.action_aboutFragment_to_aboutListFragment)
-        }
+        binding.textView10.text = "Placeholder text for podcast description"
 
 
         return binding.root
