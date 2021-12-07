@@ -6,8 +6,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HostLybaFragment">
-
+    tools:context=".HostLybaFragment"
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/textView6"
@@ -16,7 +16,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"/>
 
     <ImageView
         android:id="@+id/imageView6"
@@ -38,7 +41,6 @@
         android:id="@+id/imageView8"
         android:layout_width="131dp"
         android:layout_height="245dp"
-        android:rotation="90"
         android:src="@drawable/lybaimg3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

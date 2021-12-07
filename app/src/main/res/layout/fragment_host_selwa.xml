@@ -5,8 +5,8 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HostSelwaFragment">
-
+    tools:context=".HostSelwaFragment"
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/textView7"
@@ -14,7 +14,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"/>
 
     <ImageView
         android:id="@+id/imageView9"
