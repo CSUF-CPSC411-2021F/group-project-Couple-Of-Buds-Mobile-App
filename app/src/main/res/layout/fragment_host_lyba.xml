@@ -18,6 +18,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         android:paddingStart="10dp"
+        android:justificationMode="inter_word"
+        android:textColor="@color/black"
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"/>
 

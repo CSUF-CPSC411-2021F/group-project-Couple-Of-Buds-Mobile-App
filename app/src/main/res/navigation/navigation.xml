@@ -124,7 +124,7 @@
     <fragment
         android:id="@+id/businessesFragment"
         android:name="com.example.cobrtb.BusinessesFragment"
-        android:label="fragment_businesses"
+        android:label="Featured Businesses"
         tools:layout="@layout/fragment_businesses" >
         <action
             android:id="@+id/action_businessesFragment_to_mahnjaanDecorates"

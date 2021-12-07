@@ -5,6 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".BusinessesFragment">
 
 
@@ -19,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.991"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/decorates" />
 
     <ImageButton
         android:id="@+id/button2"
@@ -31,6 +32,6 @@
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="@+id/button"
-        app:srcCompat="@drawable/logo2" />
+        app:srcCompat="@drawable/fortheummah" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

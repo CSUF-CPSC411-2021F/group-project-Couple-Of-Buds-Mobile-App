@@ -15,6 +15,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background"
         tools:context=".updatesitem.UpdatesItemFragment">
 
         <!-- Display information about the update. -->
@@ -25,6 +26,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
             android:text="@{updatesItemViewModel.update.name}"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +40,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
             android:justificationMode="inter_word"
             android:text="@{updatesItemViewModel.update.description}"
             android:textSize="20sp"
