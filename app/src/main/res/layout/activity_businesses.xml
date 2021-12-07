@@ -20,20 +20,20 @@
         android:layout_marginBottom="80dp"
         android:onClick="openMahnjaanDecorates"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/decorates" />
 
     <ImageButton
         android:id="@+id/button2"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="228dp"
+        android:layout_height="251dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="70dp"
         android:onClick="openForTheUmmah"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/logo2" />
+        app:srcCompat="@drawable/fortheummah" />
 
 </RelativeLayout>
