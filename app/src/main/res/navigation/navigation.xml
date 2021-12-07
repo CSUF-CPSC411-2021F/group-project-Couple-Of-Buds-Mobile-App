@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
 
-    app:startDestination="@id/updatesListFragment">
+    app:startDestination="@id/landingFragment">
 
     <fragment
         android:id="@+id/featuredGuestFragment"
@@ -24,7 +24,7 @@
     <fragment
         android:id="@+id/guestFragment"
         android:name="com.example.cobrtb.GuestFragment"
-        android:label="fragment_guest"
+        android:label="Ima Guess"
         tools:layout="@layout/fragment_guest" >
         <argument
             android:name="guestId"
@@ -47,7 +47,7 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.cobrtb.AboutFragment"
-        android:label="fragment_about"
+        android:label="About Us"
         tools:layout="@layout/fragment_about" >
         <action
             android:id="@+id/action_aboutFragment_to_hostLybaFragment"
@@ -62,12 +62,12 @@
     <fragment
         android:id="@+id/hostLybaFragment"
         android:name="com.example.cobrtb.HostLybaFragment"
-        android:label="fragment_host_lyba"
+        android:label="Lyba Batla"
         tools:layout="@layout/fragment_host_lyba" />
     <fragment
         android:id="@+id/hostSelwaFragment"
         android:name="com.example.cobrtb.HostSelwaFragment"
-        android:label="fragment_host_selwa"
+        android:label="Selwa Hassen"
         tools:layout="@layout/fragment_host_selwa" />
 
     <fragment
@@ -87,9 +87,6 @@
             app:argType="long" />
     </fragment>
 
-
-
-    
     <fragment
         android:id="@+id/updatesListFragment"
         android:name="com.example.cobrtb.updatesList.UpdatesListFragment"
@@ -106,5 +103,44 @@
             android:name="updatesId"
             app:argType="long" />
     </fragment>
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.cobrtb.landingFragment"
+        android:label="COBRTB"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_updatesListFragment"
+            app:destination="@id/updatesListFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_featuredGuestFragment"
+            app:destination="@id/featuredGuestFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_businessesFragment"
+            app:destination="@id/businessesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessesFragment"
+        android:name="com.example.cobrtb.BusinessesFragment"
+        android:label="fragment_businesses"
+        tools:layout="@layout/fragment_businesses" >
+        <action
+            android:id="@+id/action_businessesFragment_to_mahnjaanDecorates"
+            app:destination="@id/mahnjaanDecorates" />
+        <action
+            android:id="@+id/action_businessesFragment_to_forTheUmmah3"
+            app:destination="@id/forTheUmmah3" />
+    </fragment>
+    <activity
+        android:id="@+id/forTheUmmah3"
+        android:name="com.example.cobrtb.ForTheUmmah"
+        android:label="ForTheUmmah" />
+    <activity
+        android:id="@+id/mahnjaanDecorates"
+        android:name="com.example.cobrtb.MahnjaanDecorates"
+        android:label="MahnjaanDecorates" />
+
 
 </navigation>
