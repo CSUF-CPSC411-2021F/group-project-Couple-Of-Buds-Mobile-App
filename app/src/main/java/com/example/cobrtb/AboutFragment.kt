@@ -36,7 +36,10 @@ class AboutFragment : Fragment() {
                 view : View -> view.findNavController().navigate(R.id.action_aboutFragment_to_hostSelwaFragment)
         }
 
-        binding.textView10.text = "Placeholder text for podcast description"
+        binding.textView10.text = "Join Lyba and Selwa as they navigate their experiences of being " +
+                "Muslim American and children of immigrants. As a couple of buds constantly growing" +
+                " and in bloom, Lyba and Selwa have deep and personal conversations about various " +
+                "topics that they think are important to discuss!"
 
 
         return binding.root
