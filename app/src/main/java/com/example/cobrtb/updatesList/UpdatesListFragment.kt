@@ -17,7 +17,7 @@ class UpdatesListFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Create data binding
         val binding: UpdatesListFragmentBinding =
             DataBindingUtil.inflate(inflater, R.layout.updates_list_fragment, container, false)

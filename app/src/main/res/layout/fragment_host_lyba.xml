@@ -21,7 +21,8 @@
         android:justificationMode="inter_word"
         android:textColor="@color/black"
         android:paddingEnd="10dp"
-        android:paddingBottom="10dp"/>
+        android:paddingBottom="10dp"
+        tools:ignore="UnusedAttribute" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -29,6 +30,7 @@
         android:layout_height="244dp"
         android:src="@drawable/lybaimg1"
         app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/image"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -36,6 +38,7 @@
         android:layout_width="134dp"
         android:layout_height="245dp"
         android:src="@drawable/lybaimg2"
+        android:contentDescription="@string/image"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,6 +47,7 @@
         android:layout_width="131dp"
         android:layout_height="245dp"
         android:src="@drawable/lybaimg3"
+        android:contentDescription="@string/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView7"

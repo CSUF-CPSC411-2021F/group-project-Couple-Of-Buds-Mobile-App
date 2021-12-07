@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import com.example.cobrtb.databinding.FragmentAboutBinding
 import com.example.cobrtb.databinding.FragmentLandingBinding
 
 /**

@@ -15,7 +15,7 @@
         android:layout_height="34dp"
         android:background="#00FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:text="FOR THE UMMAH"
+        android:text="@string/for_the_ummah"
         android:textColor="#3C8C3F"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,13 +45,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.181"
-        app:srcCompat="@drawable/fortheummah" />
+        app:srcCompat="@drawable/fortheummah"
+        android:contentDescription="@string/image" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="202dp"
         android:layout_height="216dp"
-        android:text="Join us for a future episode with the brand For The Ummah. In this future episode we will be discussing their journey through their brand creation. Tasneem discusses the hardships that the siblings had to over come to begin their small business"
+        android:text="@string/join_us_for_a_future_episode_with_the_brand_for_the_ummah_in_this_future_episode_we_will_be_discussing_their_journey_through_their_brand_creation_tasneem_discusses_the_hardships_that_the_siblings_had_to_over_come_to_begin_their_small_business"
         android:textColor="#527727"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

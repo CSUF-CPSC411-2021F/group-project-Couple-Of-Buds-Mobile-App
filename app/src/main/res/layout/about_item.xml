@@ -22,8 +22,7 @@
 
         <!-- Displays the name of the about. Clicking on the about will call
              the passed clickListener's onClick function. It passes the about object
-             also used for populating the interface.
-        -->
+             also used for populating the interface. -->
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"

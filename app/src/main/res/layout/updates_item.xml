@@ -22,8 +22,7 @@
 
         <!-- Displays the name of the updates. Clicking on the updates will call
              the passed clickListener's onClick function. It passes the updates object
-             also used for populating the interface.
-        -->
+             also used for populating the interface. -->
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"

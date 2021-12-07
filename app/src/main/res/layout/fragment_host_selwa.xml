@@ -19,13 +19,15 @@
         android:justificationMode="inter_word"
         android:paddingEnd="10dp"
         android:textColor="@color/black"
-        android:paddingBottom="10dp"/>
+        android:paddingBottom="10dp"
+        tools:ignore="UnusedAttribute" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="138dp"
         android:layout_height="280dp"
         android:src="@drawable/selwaimg1"
+        android:contentDescription="@string/image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,6 +36,7 @@
         android:layout_width="147dp"
         android:layout_height="280dp"
         android:src="@drawable/selwaimg2"
+        android:contentDescription="@string/image"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +45,7 @@
         android:layout_width="125dp"
         android:layout_height="280dp"
         android:src="@drawable/selwaimg3"
+        android:contentDescription="@string/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toTopOf="parent" />

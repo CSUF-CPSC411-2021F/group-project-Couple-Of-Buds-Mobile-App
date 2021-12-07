@@ -16,7 +16,7 @@ class AboutItemFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Retrieve arguments passed from the RecyclerView
         val args = AboutItemFragmentArgs.fromBundle(
             requireArguments()

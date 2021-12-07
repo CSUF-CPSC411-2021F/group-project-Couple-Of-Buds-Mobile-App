@@ -18,7 +18,7 @@ class AboutListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Create data binding
         val binding: AboutListFragmentBinding =
             DataBindingUtil.inflate(inflater, R.layout.about_list_fragment, container, false)
@@ -43,7 +43,7 @@ class AboutListFragment : Fragment() {
         binding.lifecycleOwner = this
 
         // Provide a lambda function that is called when the RecyclerView item is selected.
-        var aboutAdapter = AboutListAdapter(AboutListener {
+        val aboutAdapter = AboutListAdapter(AboutListener {
                aboutId ->
             // Navigate to the about view and provide the id of the about referenced
             // by the select RecyclerView item.

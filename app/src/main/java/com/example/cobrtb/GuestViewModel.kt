@@ -2,7 +2,6 @@ package com.example.cobrtb
 
 import android.app.Application
 import androidx.lifecycle.*
-import com.example.cobrtb.database.Guest
 import com.example.cobrtb.database.GuestDAO
 import com.example.cobrtb.database.GuestGenerator
 import kotlinx.coroutines.launch

@@ -2,13 +2,11 @@ package com.example.cobrtb
 
 import android.widget.MediaController
 import android.net.Uri
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.VideoView
-import android.view.View
 
 class MahnjaanDecorates : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +20,6 @@ class MahnjaanDecorates : AppCompatActivity() {
         mVideoView.setVideoURI(localUri)
         mVideoView.requestFocus()
         mVideoView.start()
-        
         webViewSetup()
     }
 
@@ -32,7 +29,6 @@ class MahnjaanDecorates : AppCompatActivity() {
 
         mWebView.apply {
             loadUrl("https://linktr.ee/mahnjaandecorates")
-            //
         }
     }
 }

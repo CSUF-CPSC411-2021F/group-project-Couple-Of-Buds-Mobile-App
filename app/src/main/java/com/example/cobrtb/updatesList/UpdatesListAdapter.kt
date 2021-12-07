@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import androidx.room.Update
 import com.example.cobrtb.database.Updates
 import com.example.cobrtb.databinding.UpdatesItemBinding
 

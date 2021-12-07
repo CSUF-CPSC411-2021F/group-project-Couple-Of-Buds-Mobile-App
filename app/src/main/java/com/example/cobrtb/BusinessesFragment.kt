@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.cobrtb.databinding.FragmentBusinessesBinding
-import com.example.cobrtb.databinding.FragmentLandingBinding
 
 
 /**
@@ -19,7 +18,7 @@ class BusinessesFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentBusinessesBinding.inflate(layoutInflater)
 
         binding.button.setOnClickListener {

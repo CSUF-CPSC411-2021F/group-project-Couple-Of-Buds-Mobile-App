@@ -30,7 +30,7 @@ class AboutViewModel (
         // canceled when the ViewModel is destroyed.
         viewModelScope.launch {
             // Create About object using data stored in the EditText views
-            var about = About()
+            val about = About()
             about.name = name.value.toString()
             about.location = location.value.toString()
 

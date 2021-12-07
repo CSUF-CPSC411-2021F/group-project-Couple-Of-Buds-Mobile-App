@@ -4,8 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.sqlite.db.SupportSQLiteDatabase
-import java.util.concurrent.Executors
+
 
 @Database(entities = [Updates::class], version = 1, exportSchema = false)
 abstract class UpdatesDatabase: RoomDatabase() {
@@ -23,10 +22,7 @@ abstract class UpdatesDatabase: RoomDatabase() {
             // it once by using synchronized. Only one thread may enter a synchronized block at a
             // time.
 
-            // return INSTANCE ?:
             synchronized(this) {
-
-                // INSTANCE ?: buildDatabase(context).also { INSTANCE = it }
 
                 // Copy the current value of INSTANCE to a local variable so Kotlin can smart cast.
                 // Smart cast is only available to local variables.

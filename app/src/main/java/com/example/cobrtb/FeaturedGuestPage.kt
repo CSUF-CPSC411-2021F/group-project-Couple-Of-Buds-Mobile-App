@@ -3,11 +3,8 @@ package com.example.cobrtb
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.cobrtb.database.GuestDatabase
-import com.example.cobrtb.GuestViewModel
 import com.example.cobrtb.databinding.ActivityFeaturedGuestPageBinding
 
 

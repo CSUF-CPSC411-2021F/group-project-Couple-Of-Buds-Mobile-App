@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">COBRTB</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="add_about">Add about</string>
+    <string name="clear">Clear</string>
+    <string name="about">About</string>
+    <string name="image">image</string>
+    <string name="for_the_ummah">FOR THE UMMAH</string>
+    <string name="join_us_for_a_future_episode_with_the_brand_for_the_ummah_in_this_future_episode_we_will_be_discussing_their_journey_through_their_brand_creation_tasneem_discusses_the_hardships_that_the_siblings_had_to_over_come_to_begin_their_small_business">Join us for a future episode with the brand For The Ummah. In this future episode we will be discussing their journey through their brand creation. Tasneem discusses the hardships that the siblings had to over come to begin their small business</string>
+    <string name="mahnjaan_decorates">MAHNJAAN DECORATES</string>
+    <string name="we_are_so_excited_for_y_all_to_hear_our_chat_with_mahnoor_creator_of_mahnjaandecorates_throughout_the_episode_mahnoor_offers_gems_of_entrepreneurial_and_life_advice_we_discuss_her_journey_from_working_in_a_toxic_environment_and_realizing_her_potential_drive_for_baking_and_decorating_as_well_as_the_importance_of_networking_and_her_emotional_role_as_a_connection_between_community_during_quarantine">We are so excited for y’all to hear our chat with Mahnoor, creator of @mahnjaandecorates ! Throughout the episode, Mahnoor offers gems of entrepreneurial and life advice. We discuss her journey from working in a toxic environment and realizing her potential/drive for baking and decorating; as well as the importance of networking and her emotional role as a connection between community during quarantine.</string>
+    <string name="lyba">Lyba</string>
+    <string name="selwa">Selwa</string>
+    <string name="click_on_the_hosts_for_more_info_about_them">Click on the hosts for more info about them!</string>
+    <string name="about_cobrtb">About COBRTB</string>
+    <string name="ima_guess">Ima Guess</string>
+    <string name="about_ima_guess_was_the_best_guest_ever_to_be_had_on_the_podcast_she_did_many_guest_things_and_overall_was_a_great_guest_ncontact_555_242_3344_ninstagram_guest_lol">About: Ima Guess was the best guest ever to be had on the podcast, she did many guest things and overall was a great guest. \nContact: 555-242-3344\nInstagram: @guest_lol</string>
+    <string name="latest_updates">Latest Updates</string>
+    <string name="featured_guests">Featured Guests</string>
+    <string name="about_us">About Us</string>
+    <string name="businesses">Businesses</string>
+    <string name="will_duong">Will Duong</string>
+    <string name="about_will_is_a_highly_intelligent_computer_science_student_who_enjoys_drifting_and_counter_strike_ncontact_911_ninstagram_big_will">About: Will is a highly intelligent computer science student who enjoys drifting and counter strike\nContact: 911\nInstagram: @big_will</string>
+    <string name="updates">Updates</string>
 </resources>

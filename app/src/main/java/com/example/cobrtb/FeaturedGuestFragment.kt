@@ -21,7 +21,7 @@ class FeaturedGuestFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Create data binding
         val binding: FragmentFeaturedGuestBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_featured_guest, container, false)

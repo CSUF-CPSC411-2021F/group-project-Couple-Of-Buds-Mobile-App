@@ -21,6 +21,7 @@
             android:id="@+id/action_featuredGuestFragment_to_immaGuessFragment"
             app:destination="@id/immaGuessFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/guestFragment"
         android:name="com.example.cobrtb.GuestFragment"
@@ -33,11 +34,13 @@
             android:name="name"
             app:argType="string" />
     </fragment>
+
     <fragment
         android:id="@+id/willFragment"
         android:name="com.example.cobrtb.willFragment"
         android:label="Will Duong"
         tools:layout="@layout/fragment_will" />
+
     <fragment
         android:id="@+id/immaGuessFragment"
         android:name="com.example.cobrtb.immaGuessFragment"
@@ -59,11 +62,13 @@
             android:id="@+id/action_aboutFragment_to_aboutListFragment"
             app:destination="@id/aboutListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/hostLybaFragment"
         android:name="com.example.cobrtb.HostLybaFragment"
         android:label="Lyba Batla"
         tools:layout="@layout/fragment_host_lyba" />
+
     <fragment
         android:id="@+id/hostSelwaFragment"
         android:name="com.example.cobrtb.HostSelwaFragment"
@@ -78,6 +83,7 @@
             android:id="@+id/action_aboutListFragment_to_aboutItemFragment"
             app:destination="@id/aboutItemFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/aboutItemFragment"
         android:name="com.example.cobrtb.aboutitem.AboutItemFragment"
@@ -95,6 +101,7 @@
             android:id="@+id/action_updatesListFragment_to_updatesItemFragment"
             app:destination="@id/updatesItemFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/updatesItemFragment"
         android:name="com.example.cobrtb.updatesItem.UpdatesItemFragment"
@@ -103,6 +110,7 @@
             android:name="updatesId"
             app:argType="long" />
     </fragment>
+
     <fragment
         android:id="@+id/landingFragment"
         android:name="com.example.cobrtb.landingFragment"
@@ -121,6 +129,7 @@
             android:id="@+id/action_landingFragment_to_businessesFragment"
             app:destination="@id/businessesFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/businessesFragment"
         android:name="com.example.cobrtb.BusinessesFragment"
@@ -133,14 +142,15 @@
             android:id="@+id/action_businessesFragment_to_forTheUmmah3"
             app:destination="@id/forTheUmmah3" />
     </fragment>
+
     <activity
         android:id="@+id/forTheUmmah3"
         android:name="com.example.cobrtb.ForTheUmmah"
         android:label="ForTheUmmah" />
+
     <activity
         android:id="@+id/mahnjaanDecorates"
         android:name="com.example.cobrtb.MahnjaanDecorates"
         android:label="MahnjaanDecorates" />
-
 
 </navigation>

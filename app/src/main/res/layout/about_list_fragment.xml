@@ -24,13 +24,14 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:ems="10"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="@={aboutViewModel.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="name" />
 
         <!-- @= indicates that value in the edit text is copied to the ViewModel's location -->
         <EditText
@@ -41,17 +42,17 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:ems="10"
-            android:hint="Location"
+            android:hint="@string/location"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="@={aboutViewModel.location}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name" />
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:autofillHints="location" />
 
         <!-- onClick accepts a lambda function indicated by () -> The body
-             of the lambda function calls the insert function
-         -->
+             of the lambda function calls the insert function -->
         <Button
             android:id="@+id/add_about"
             android:layout_width="wrap_content"
@@ -59,13 +60,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:onClick="@{() -> aboutViewModel.insert()}"
-            android:text="Add about"
+            android:text="@string/add_about"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/location" />
 
         <!-- onClick accepts a lambda function indicated by () -> The body
-             of the lambda function calls the clear function
-         -->
+             of the lambda function calls the clear function -->
         <Button
             android:id="@+id/clear"
             android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:onClick="@{()-> aboutViewModel.clear()}"
-            android:text="Clear"
+            android:text="@string/clear"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/location" />
 
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
-            android:text="About"
+            android:text="@string/about"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/clear" />

@@ -20,7 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.991"
-        app:srcCompat="@drawable/decorates" />
+        app:srcCompat="@drawable/decorates"
+        android:contentDescription="@string/image" />
 
     <ImageButton
         android:id="@+id/button2"
@@ -32,6 +33,7 @@
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="@+id/button"
-        app:srcCompat="@drawable/fortheummah" />
+        app:srcCompat="@drawable/fortheummah"
+        android:contentDescription="@string/image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@
         android:layout_height="94dp"
         android:layout_marginTop="92dp"
         android:layout_marginEnd="16dp"
-        android:text="Latest Updates"
+        android:text="@string/latest_updates"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
@@ -22,7 +22,7 @@
         android:id="@+id/toGuests"
         android:layout_width="171dp"
         android:layout_height="94dp"
-        android:text="Featured Guests"
+        android:text="@string/featured_guests"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/toAbout"
         app:layout_constraintTop_toBottomOf="@+id/toAbout" />
@@ -33,7 +33,7 @@
         android:layout_height="94dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="92dp"
-        android:text="About Us"
+        android:text="@string/about_us"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
@@ -41,7 +41,7 @@
         android:id="@+id/toBusinesses"
         android:layout_width="171dp"
         android:layout_height="94dp"
-        android:text="Businesses"
+        android:text="@string/businesses"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toUpdates"
         app:layout_constraintTop_toBottomOf="@+id/toUpdates"
@@ -52,6 +52,7 @@
         android:layout_width="442dp"
         android:layout_height="124dp"
         android:src="@drawable/header"
+        android:contentDescription="@string/image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"

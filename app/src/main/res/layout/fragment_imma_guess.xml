@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".immaGuessFragment"
-    android:background="@color/background"
-    >
+    android:background="@color/background" >
 
 
     <TextView
@@ -15,8 +14,8 @@
         android:layout_width="309dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
-        android:text="Ima Guess"
-        android:textSize="40dp"
+        android:text="@string/ima_guess"
+        android:textSize="40sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -29,6 +28,7 @@
         android:layout_height="276dp"
         android:layout_marginTop="96dp"
         android:src="@drawable/image"
+        android:contentDescription="@string/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,8 +38,8 @@
         android:layout_width="386dp"
         android:layout_height="234dp"
         android:layout_marginTop="24dp"
-        android:text="About: Ima Guess was the best guest ever to be had on the podcast, she did many guest things and overall was a great guest. \nContact: 555-242-3344\nInstagram: @guest_lol"
-        android:textSize="25dp"
+        android:text="@string/about_ima_guess_was_the_best_guest_ever_to_be_had_on_the_podcast_she_did_many_guest_things_and_overall_was_a_great_guest_ncontact_555_242_3344_ninstagram_guest_lol"
+        android:textSize="25sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

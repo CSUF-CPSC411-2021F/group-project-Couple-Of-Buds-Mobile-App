@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.cobrtb.database.AboutDao
-import com.example.cobrtb.aboutlist.AboutViewModel
 
 class AboutItemViewModelFactory (
     private val aboutId: Long,

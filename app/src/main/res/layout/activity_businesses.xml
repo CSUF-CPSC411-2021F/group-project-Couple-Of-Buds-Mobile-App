@@ -20,7 +20,9 @@
         android:layout_marginBottom="80dp"
         android:onClick="openMahnjaanDecorates"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/decorates" />
+        app:srcCompat="@drawable/decorates"
+        android:contentDescription="@string/image"
+        tools:ignore="UsingOnClickInXml" />
 
     <ImageButton
         android:id="@+id/button2"
@@ -34,6 +36,8 @@
         android:layout_marginBottom="70dp"
         android:onClick="openForTheUmmah"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/fortheummah" />
+        app:srcCompat="@drawable/fortheummah"
+        android:contentDescription="@string/image"
+        tools:ignore="UsingOnClickInXml" />
 
 </RelativeLayout>
